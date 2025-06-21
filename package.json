@@ -1,0 +1,12 @@
+{
+    "name": "website",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently 'pnpm --filter backend run dev' 'pnpm --filter frontend run dev'",
+        "build": "pnpm --filter backend run build && pnpm --filter frontend run build",
+        "start": "pnpm --filter backend start"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}
