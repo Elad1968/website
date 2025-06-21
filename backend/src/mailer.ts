@@ -17,7 +17,7 @@ function encodeMessage(message: Message) {
 
 async function getHtmlTemplate(message: Message): Promise<string> {
     let html: string;
-    if (process.env.NODE_ENV === "production") {
+    if (process.env.PRODUCTION === "true") {
         html = require("./html/contact.html");
     } else {
         const file = fileURLToPath(import.meta.url);
