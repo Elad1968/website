@@ -9,7 +9,7 @@ export default function IntroductionButton({ href, children }: IntroductionButto
     return (
         <a
             href={href}
-            target="_blank"
+            target={href.startsWith("http") ? "_blank" : "_self"}
             className="inline-flex justify-between items-center gap-2 grow w-32 border-transparent border-2 hover:border-[var(--color-background)] hover:border-highlighted border-unhighlighted rounded-md overflow-hidden duration-250 ease-linear"
         >
             <Button className="cursor-pointer w-full grow hover:bg-primary rounded-none">{children}</Button>
