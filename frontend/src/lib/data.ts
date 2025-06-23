@@ -132,7 +132,7 @@ export const skills: Skills = {
     "Web Technologies": ["HTML", "CSS", "Node.js", "React", "Tailwind", "Bootstrap", "Express", "Flask"],
     Databases: ["MySQL", "SQLite", "MSSQL", "PostgreSQL", "MongoDB"],
     "Build Systems": ["CMake", "Vite", "Gradle"],
-    "System Administration": ["Bash", "PowerShell", "Git", "Linux", "Windows"],
+    DevOps: ["Bash", "PowerShell", "Git", "Linux", "Windows"],
     "UI development": ["Android", "Qt", "WPF"],
 } as const;
 
