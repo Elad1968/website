@@ -25,7 +25,7 @@ export default function Footer() {
                 <span className="inline-block hover:rotated hover:repeat-infinite hover:duration-2000 hover:ease-linear cursor-default select-none">
                     ©
                 </span>
-                {` ${footer.copyright.start}-${footer.copyright.end}, ${general.name}, All
+                {` ${footer.copyright.start} - ${footer.copyright.end}, ${general.name}, All
                 rights reserved.`}
             </span>
         </footer>
