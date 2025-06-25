@@ -1,6 +1,5 @@
 import { footer, general } from "@/lib/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Fragment } from "react/jsx-runtime";
 
 export default function Footer() {
     return (
@@ -8,16 +7,13 @@ export default function Footer() {
             <div className="flex flex-row flex-wrap gap-4 max-w-full justify-center">
                 {Object.values(footer.contact).map((contactInfo, index) => {
                     return (
-                        <Fragment key={index}>
-                            {index > 10 && <span>|</span>}
-                            <span className="flex flex-row gap-2 items-center justify-center">
-                                <FontAwesomeIcon
-                                    icon={contactInfo.icon}
-                                    className="hover:wiggled hover:repeat-1 hover:ease-linear hover:duration-500"
-                                />
-                                {contactInfo.text}
-                            </span>
-                        </Fragment>
+                        <span className="flex flex-row gap-2 items-center justify-center" key={index}>
+                            <FontAwesomeIcon
+                                icon={contactInfo.icon}
+                                className="hover:wiggled hover:repeat-1 hover:ease-linear hover:duration-500"
+                            />
+                            {contactInfo.text}
+                        </span>
                     );
                 })}
             </div>
