@@ -168,6 +168,9 @@
         scrollbar-width: auto;
         scrollbar-color: #cecece transparent;
     }
+    html {
+        @apply scroll-smooth;
+    }
     body {
         @apply bg-background text-foreground;
     }
@@ -233,6 +236,7 @@
     .screen {
         @apply w-screen p-4;
         min-height: calc(100vh - var(--header-height));
+        scroll-margin-top: var(--header-height);
     }
     .dim {
         @apply text-primary-foreground backdrop-blur-xl;

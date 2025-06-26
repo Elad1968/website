@@ -20,16 +20,8 @@ export default function Header() {
             className="text-primary-foreground sticky top-0 flex flex-row justify-around items-center p-4 dim z-10"
             ref={header}
         >
-            <h1
-                className="m-0 text-4xl cursor-pointer hover:text-green-500"
-                onClick={() => {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth",
-                    });
-                }}
-            >
-                {general.name}
+            <h1 className="m-0 text-4xl cursor-pointer hover:text-green-500">
+                <a href="#">{general.name}</a>
             </h1>
             <nav className="flex flex-row justify-around gap-4 max-lg:hidden">
                 <NavLink href="#about">About</NavLink>
