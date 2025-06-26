@@ -3,8 +3,7 @@
     "private": true,
     "scripts": {
         "dev": "concurrently 'pnpm --filter backend run dev' 'pnpm --filter frontend run dev'",
-        "build": "pnpm --filter backend run build && pnpm --filter frontend run build",
-        "start": "pnpm --filter backend start"
+        "build": "pnpm --filter backend run build && pnpm --filter frontend run build"
     },
     "devDependencies": {
         "concurrently": "^9.2.0"
