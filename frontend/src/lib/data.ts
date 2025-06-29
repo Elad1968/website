@@ -179,6 +179,12 @@ export const projects: Projects = {
         link: "https://github.com/Elad1968/transportation-system",
         skills: ["C++", "CMake"],
     },
+    "Virus Simulator": {
+        details:
+            "A program that lets the user define a group of viruses and a target virus, and simulates virus mutations based on random values. Leveraging programming concepts like shared pointers.",
+        link: "https://github.com/Elad1968/virus-simulator",
+        skills: ["C++", "CMake"],
+    },
     Tasks: {
         details:
             "A tasks web app for managing daily to-dos. Has account management, cloud saving and note editing features.",
