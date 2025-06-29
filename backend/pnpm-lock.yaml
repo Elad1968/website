@@ -27,8 +27,8 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0
       nodemailer:
-        specifier: ^7.0.3
-        version: 7.0.3
+        specifier: ^7.0.4
+        version: 7.0.4
       pm2:
         specifier: ^6.0.8
         version: 6.0.8
@@ -1101,8 +1101,8 @@ packages:
     resolution: {integrity: sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==}
     engines: {node: '>= 0.4.0'}
 
-  nodemailer@7.0.3:
-    resolution: {integrity: sha512-Ajq6Sz1x7cIK3pN6KesGTah+1gnwMnx5gKl3piQlQQE/PwyJ4Mbc8is2psWYxK3RJTVeqsDaCv8ZzXLCDHMTZw==}
+  nodemailer@7.0.4:
+    resolution: {integrity: sha512-9O00Vh89/Ld2EcVCqJ/etd7u20UhME0f/NToPfArwPEe1Don1zy4mAIz6ariRr7mJ2RDxtaDzN0WJVdVXPtZaw==}
     engines: {node: '>=6.0.0'}
 
   nodemon@3.1.10:
@@ -2573,7 +2573,7 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  nodemailer@7.0.3: {}
+  nodemailer@7.0.4: {}
 
   nodemon@3.1.10:
     dependencies:
