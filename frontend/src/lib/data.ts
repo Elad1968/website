@@ -173,6 +173,12 @@ export const projects: Projects = {
         link: "https://github.com/Elad1968/file-system",
         skills: ["C++", "Linux", "CMake"],
     },
+    "Transportation System": {
+        details:
+            "A CLI tool for managing a user configured transportation network, leveraging algorithms such as BFS and DFS for fast and efficient data queries.",
+        link: "https://github.com/Elad1968/transportation-system",
+        skills: ["C++", "CMake"],
+    },
     Tasks: {
         details:
             "A tasks web app for managing daily to-dos. Has account management, cloud saving and note editing features.",
