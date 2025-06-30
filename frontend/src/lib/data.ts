@@ -1,5 +1,7 @@
 import { faGithub, faLinkedin, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFile, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { general } from "./data/general";
+export { general };
 
 export const skillSrcMap = {
     C: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
@@ -34,12 +36,6 @@ export const skillSrcMap = {
     Qt: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg",
     WPF: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg",
 } as const;
-
-type General = {
-    name: string;
-    mail: string;
-    phone: string;
-};
 
 type Introduction = {
     about: string;
@@ -85,12 +81,6 @@ type Footer = {
 type Card = {
     title: string;
 };
-
-export const general: General = {
-    name: "Elad Huttner",
-    mail: "mail@eladhuttner.net",
-    phone: "+972-55-668-4427",
-} as const;
 
 export const introduction: Introduction = {
     about: "A B.Sc. computer sceince student and a passionate software developer.",
