@@ -1,25 +1,9 @@
-import { useEffect, useRef, RefObject } from "react";
 import NavLink from "./NavLink";
 import { general } from "@/lib/data";
 
-function setHeaderHeight(header: RefObject<HTMLHeadElement | null>) {
-    return () => {
-        document.documentElement.style.setProperty("--header-height", `${header.current?.offsetHeight ?? 0}px`);
-    };
-}
-
 export default function Header() {
-    const header = useRef<HTMLElement | null>(null);
-    useEffect(() => {
-        const heightSetter = setHeaderHeight(header);
-        heightSetter();
-        header.current?.addEventListener("resize", heightSetter);
-    });
     return (
-        <header
-            className="text-primary-foreground sticky top-0 flex flex-row justify-around items-center p-4 dim z-10"
-            ref={header}
-        >
+        <header className="text-primary-foreground sticky top-0 flex flex-row justify-around items-center p-4 dim z-10">
             <h1 className="m-0 text-4xl cursor-pointer hover:text-green-500">
                 <a href="#">{general.name}</a>
             </h1>

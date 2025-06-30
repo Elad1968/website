@@ -10,7 +10,7 @@ export default function Footer() {
                         <span className="flex flex-row gap-2 items-center justify-center" key={index}>
                             <FontAwesomeIcon
                                 icon={contactInfo.icon}
-                                className="hover:wiggled hover:repeat-1 hover:ease-linear hover:duration-500"
+                                className="hover:wiggled hover:repeat-1 hover:ease-linear hover:duration-500 w-4 h-4"
                             />
                             {contactInfo.text}
                         </span>

@@ -35,6 +35,7 @@
     --radius-lg: var(--radius);
     --radius-xl: calc(var(--radius) + 4px);
     --default-font-family: Rubik;
+    --header-height: 4.5rem;
 }
 
 @font-face {

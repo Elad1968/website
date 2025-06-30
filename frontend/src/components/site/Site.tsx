@@ -9,7 +9,7 @@ import Skills from "./skills/Skills";
 export default function Site() {
     return (
         <div
-            className="flex flex-col p-0 m-0 w-screen min-h-screen bg-orange-800"
+            className="flex flex-col p-0 m-0 w-screen min-h-screen bg-orange-800 max-[256px]:hidden"
             onDragStart={(event) => {
                 event.preventDefault();
             }}
