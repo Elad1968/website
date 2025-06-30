@@ -147,7 +147,7 @@ export const projects: Projects = {
         details:
             "A terminal, turn based Star Wars game featuring different types of controllable spaceships with the goal of collecting gems. Uses the model view controller, abstract factory and singleton design patterns.",
         link: "https://github.com/Elad1968/star-wars-game",
-        skills: ["C++"],
+        skills: ["C++", "CMake"],
     },
     "Bug Tracker": {
         details:
