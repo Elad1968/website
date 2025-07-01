@@ -133,7 +133,7 @@ export const projects: Projects = {
         link: "https://github.com/Elad1968/web-gpt-explainer",
         skills: ["Python", "Flask"],
     },
-    "Star Wars game": {
+    "Star Wars Game": {
         details:
             "A terminal, turn based Star Wars game featuring different types of controllable spaceships with the goal of collecting gems. Uses the model view controller, abstract factory and singleton design patterns.",
         link: "https://github.com/Elad1968/star-wars-game",
