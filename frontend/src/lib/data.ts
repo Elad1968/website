@@ -139,6 +139,12 @@ export const projects: Projects = {
         link: "https://github.com/Elad1968/star-wars-game",
         skills: ["C++", "CMake"],
     },
+    Chess: {
+        details:
+            "A terminal chess client built with ncurses, Where two players can play against each other and keep score. Has full keyboard support for navigation and control of the game. Uses the MVC design pattern.",
+        link: "https://github.com/Elad1968/chess",
+        skills: ["C++", "CMake"],
+    },
     "Bug Tracker": {
         details:
             "A Windows GUI bug tracking system for projects, using various storage formats, such as memory, JSON files and MSSQL databases. Uses the abstract factory, composite and repository design patterns.",
