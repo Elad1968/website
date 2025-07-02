@@ -36,6 +36,13 @@
     --radius-xl: calc(var(--radius) + 4px);
     --default-font-family: Rubik;
     --header-height: 4.5rem;
+    --rainbow-red: #ff6b6b;
+    --rainbow-orange: #f7b731;
+    --rainbow-yellow: #ffeb33;
+    --rainbow-green: #4caf50;
+    --rainbow-blue: #00bcd4;
+    --rainbow-indigo: #6a82fb;
+    --rainbow-purple: #9b59b6;
 }
 
 @font-face {
@@ -179,22 +186,22 @@
 
 @layer components {
     #introduction {
-        background-image: linear-gradient(#ff6b6b, #f7b731);
+        background-image: linear-gradient(var(--rainbow-red), var(--rainbow-orange));
     }
     #about {
-        background-image: linear-gradient(#f7b731, #ffeb33);
+        background-image: linear-gradient(var(--rainbow-orange), var(--rainbow-yellow));
     }
     #skills {
-        background-image: linear-gradient(#ffeb33, #4caf50);
+        background-image: linear-gradient(var(--rainbow-yellow), var(--rainbow-green));
     }
     #projects {
-        background-image: linear-gradient(#4caf50, #00bcd4);
+        background-image: linear-gradient(var(--rainbow-green), var(--rainbow-blue));
     }
     #contact {
-        background-image: linear-gradient(#00bcd4, #6a82fb);
+        background-image: linear-gradient(var(--rainbow-blue), var(--rainbow-indigo));
     }
     #future-section {
-        background-image: linear-gradient(#6a82fb, #9b59b6);
+        background-image: linear-gradient(var(--rainbow-indigo), var(--rainbow-purple));
     }
     .business-card {
         @apply flex flex-col justify-center items-center w-screen h-screen text-center;
