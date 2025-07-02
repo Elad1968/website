@@ -32,7 +32,7 @@ export default function Introduction() {
                 />
             </div>
             <a
-                className="flex flex-col items-center gap-2 stretch-down cursor-pointer fade-to-view delay-1000 no-underline text-inherit"
+                className="flex flex-col items-center gap-2 stretch-down fade-to-view delay-1000 no-underline text-inherit"
                 href="#about"
             >
                 <p className="text-sm">Scroll down to discover more about me!</p>

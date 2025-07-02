@@ -4,7 +4,7 @@ interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export default function NavLink({ children, ...props }: NavLinkProps) {
     return (
-        <a className="text-primary-foreground underline cursor-pointer font-semibold hover:text-purple-300" {...props}>
+        <a className="text-primary-foreground underline font-semibold hover:text-purple-300" {...props}>
             {children}
         </a>
     );

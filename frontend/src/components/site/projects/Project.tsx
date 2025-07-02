@@ -10,7 +10,7 @@ type ProjectProps = {
 export default function Project({ title, href, description, skills }: ProjectProps) {
     return (
         <a
-            className="glass shadowed w-128 flex flex-col items-center p-4 rounded-lg border border-black cursor-pointer gap-4 max-w-[90vw]"
+            className="glass shadowed w-128 flex flex-col items-center p-4 rounded-lg border border-black gap-4 max-w-[90vw]"
             href={href}
             target="_blank"
             data-selectable
