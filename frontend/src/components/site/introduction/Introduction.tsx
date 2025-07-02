@@ -31,27 +31,15 @@ export default function Introduction() {
                     className="shadowed max-w-96 border-4 border-black rounded-xl w-full max-lg:hidden fade-to-view delay-500"
                 />
             </div>
-            <div
-                className="flex flex-col items-center gap-2 stretch-down cursor-pointer fade-to-view delay-1000"
-                onClick={() => {
-                    const element = document.querySelector("#about");
-                    if (!element) return;
-                    const y = window.scrollY;
-                    const top = element.getBoundingClientRect().top;
-                    const offset = Number(
-                        document.documentElement.style.getPropertyValue("--header-height").replace("px", "")
-                    );
-                    window.scrollTo({
-                        top: y + top - offset,
-                        behavior: "smooth",
-                    });
-                }}
+            <a
+                className="flex flex-col items-center gap-2 stretch-down cursor-pointer fade-to-view delay-1000 no-underline text-inherit"
+                href="#about"
             >
                 <p className="text-sm">Scroll down to discover more about me!</p>
                 <div className="bounced duration-750 ease-in-out repeat-infinite">
                     <ChevronDown className="w-8 h-8" />
                 </div>
-            </div>
+            </a>
         </section>
     );
 }
