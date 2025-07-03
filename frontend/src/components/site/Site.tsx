@@ -30,7 +30,7 @@ export default function Site() {
                     return (
                         <div key={index} className={`${colors[index]}`}>
                             <hr
-                                className={`my-[calc((100vw/2)*tan(2.5deg))] flex-shrink-1 relative border-black border-y-2 border-dashed ${
+                                className={`my-[calc((50vw)*tan(2.5deg))] flex-shrink-1 relative border-black border-y-2 border-dashed ${
                                     degrees[index % 2]
                                 }`}
                             />
