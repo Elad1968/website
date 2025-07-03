@@ -15,7 +15,7 @@ export default function Site() {
         "bg-[var(--rainbow-blue)]",
         "bg-[var(--rainbow-indigo)]",
     ] as const;
-    const degrees = ["rotate-[2.5deg]", "-rotate-[2.5deg]"] as const;
+    const degrees = ["rotate-[var(--section-separator-angle)]", "-rotate-[var(--section-separator-angle)]"] as const;
     return (
         <div
             className="flex flex-col p-0 m-0 w-screen min-h-screen bg-orange-800 max-[256px]:hidden"
@@ -30,7 +30,7 @@ export default function Site() {
                     return (
                         <div key={index} className={`${colors[index]}`}>
                             <hr
-                                className={`my-[calc((50vw)*tan(2.5deg))] flex-shrink-1 relative border-black border-y-2 border-dashed ${
+                                className={`my-[calc((50vw)*tan(var(--section-separator-angle)))] flex-shrink-1 relative border-black border-y-2 border-dashed ${
                                     degrees[index % 2]
                                 }`}
                             />

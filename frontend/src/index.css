@@ -43,6 +43,7 @@
     --rainbow-blue: #00bcd4;
     --rainbow-indigo: #6a82fb;
     --rainbow-purple: #9b59b6;
+    --section-separator-angle: 2.5deg;
 }
 
 @font-face {
