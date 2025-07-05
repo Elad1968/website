@@ -228,20 +228,6 @@
         @apply opacity-0 duration-500 ease-in fill-mode-forwards;
         animation-name: fade-to-view;
     }
-    .glass {
-        @apply backdrop-blur-lg;
-        background-color: rgba(255, 255, 255, 0.5);
-        &[data-selectable] {
-            @apply duration-250;
-            transition-property: translate, box-shadow;
-            &:hover {
-                @apply border-amber-500 transform;
-                translate: -0.5rem -0.5rem;
-                background-color: rgba(255, 255, 255, 0.625);
-                box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.25) !important;
-            }
-        }
-    }
     .screen {
         @apply w-screen p-4;
         min-height: calc(100vh - var(--header-height));
@@ -250,9 +236,6 @@
     .dim {
         @apply text-primary-foreground backdrop-blur-xl;
         background-color: rgba(32, 32, 32, 0.75);
-    }
-    .shadowed {
-        box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
     }
     .underlined {
         position: relative;
@@ -299,4 +282,28 @@
 
 @utility bounced {
     animation-name: bounce;
+}
+
+@utility glass-* {
+    @apply backdrop-blur-lg;
+    background-color: rgba(255, 255, 255, 0.5);
+    &[data-selectable] {
+        @apply duration-250;
+        transition-property: translate, box-shadow;
+        &:hover {
+            @apply border-amber-500 transform;
+            translate: calc(--value(number) * -1rem) calc(--value(number) * -1rem);
+            background-color: rgba(255, 255, 255, 0.625);
+            box-shadow: calc(--value(number) * 2rem) calc(--value(number) * 2rem) calc(--value(number) * 1rem)
+                rgba(0, 0, 0, 0.25) !important;
+        }
+    }
+    &[data-selected] {
+        @apply border-amber-500;
+    }
+}
+
+@utility shadowed-* {
+    box-shadow: calc(--value(number) * 1rem) calc(--value(number) * 1rem) calc(--value(number) * 1rem)
+        rgba(0, 0, 0, 0.25);
 }
