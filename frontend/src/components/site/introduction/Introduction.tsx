@@ -28,7 +28,7 @@ export default function Introduction() {
                 <img
                     src="/assets/images/profile.jpg"
                     alt="Profile picture"
-                    className="shadowed max-w-96 border-4 border-black rounded-xl w-full max-lg:hidden fade-to-view delay-500"
+                    className="shadowed-0.5 max-w-96 border-4 border-black rounded-xl w-full max-lg:hidden fade-to-view delay-500"
                 />
             </div>
             <a
