@@ -37,7 +37,7 @@ export const skillSrcMap = {
     WPF: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg",
 } as const;
 
-type Introduction = {
+export type Introduction = {
     about: string;
     buttons: {
         [key: string]: {
@@ -47,13 +47,13 @@ type Introduction = {
     };
 };
 
-type About = {
+export type About = {
     text: string[];
 };
 
-type Skills = { [key: string]: (keyof typeof skillSrcMap)[] };
+export type Skills = { [key: string]: (keyof typeof skillSrcMap)[] };
 
-type Projects = {
+export type Projects = {
     [key: string]: {
         details: string;
         link: string;
@@ -61,11 +61,11 @@ type Projects = {
     };
 };
 
-type Contact = {
+export type Contact = {
     url: string;
 };
 
-type Footer = {
+export type Footer = {
     contact: {
         [key: string]: {
             icon: IconDefinition;
@@ -78,7 +78,7 @@ type Footer = {
     };
 };
 
-type Card = {
+export type Card = {
     title: string;
 };
 
