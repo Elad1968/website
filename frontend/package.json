@@ -50,6 +50,6 @@
         "typescript-eslint": "^8.35.1",
         "vite": "^7.0.2",
         "vite-prerender-plugin": "^0.5.11",
-        "zod": "^3.25.74"
+        "zod": "^3.25.75"
     }
 }
