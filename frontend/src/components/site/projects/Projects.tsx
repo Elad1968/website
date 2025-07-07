@@ -1,4 +1,4 @@
-import { projects, skills, skillSrcMap } from "@/lib/data";
+import { projects, skillList, skillSrcMap } from "@/lib/data";
 import SectionHeader from "../common/SectionHeader";
 import Project from "./Project";
 import { useReducer, useState } from "react";
@@ -24,26 +24,22 @@ export default function Projects() {
             </span>
             <div className="flex flex-col justify-center items-center gap-8">
                 <div className="flex flex-row flex-wrap gap-4 max-w-[48rem] justify-center">
-                    {Object.values(skills)
-                        .flat()
-                        .map((skill, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    title={skill}
-                                    data-selectable
-                                    data-selected={state.includes(skill) ? true : undefined}
-                                    className={
-                                        "glass-0.25 p-2 rounded-lg border-black border cursor-pointer shadowed-0.25"
-                                    }
-                                    onClick={() => {
-                                        dispatch(skill);
-                                    }}
-                                >
-                                    <img src={skillSrcMap[skill]} className="w-8 aspect-square select-none"></img>
-                                </div>
-                            );
-                        })}
+                    {skillList.map((skill, index) => {
+                        return (
+                            <div
+                                key={index}
+                                title={skill}
+                                data-selectable
+                                data-selected={state.includes(skill) ? true : undefined}
+                                className={"glass-0.25 p-2 rounded-lg border-black border cursor-pointer shadowed-0.25"}
+                                onClick={() => {
+                                    dispatch(skill);
+                                }}
+                            >
+                                <img src={skillSrcMap[skill]} className="w-8 aspect-square select-none"></img>
+                            </div>
+                        );
+                    })}
                 </div>
                 <div className="flex flex-row justify-center items-center gap-2 text-center">
                     <span className="text-sm">Showcases all the selected skills</span>

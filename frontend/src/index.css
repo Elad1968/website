@@ -221,9 +221,6 @@
 }
 
 @layer utilities {
-    .inside-shadow {
-        filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.5));
-    }
     .fade-to-view {
         @apply opacity-0 duration-500 ease-in fill-mode-forwards;
         animation-name: fade-to-view;
@@ -306,4 +303,10 @@
 @utility shadowed-* {
     box-shadow: calc(--value(number) * 1rem) calc(--value(number) * 1rem) calc(--value(number) * 1rem)
         rgba(0, 0, 0, 0.25);
+}
+
+@utility inside-shadow-* {
+    filter: drop-shadow(
+        calc(--value([number]) * 1rem) calc(--value([number]) * 1rem) calc(--value([number]) * 1rem) rgba(0, 0, 0, 0.5)
+    );
 }

@@ -20,7 +20,7 @@ export default function Project({ title, href, description, skills }: ProjectPro
                 <img
                     src={`/assets/images/projects/${title.toLowerCase().replaceAll(" ", "-")}.png`}
                     alt={title}
-                    className="w-32 aspect-square max-lg:hidden inside-shadow"
+                    className="w-32 aspect-square max-lg:hidden inside-shadow-[0.25]"
                 />
                 {description && <p className="max-h-32 overflow-scroll">{description}</p>}
             </div>
