@@ -37,6 +37,8 @@ export const skillSrcMap = {
     WPF: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg",
 } as const;
 
+export const skillList = Object.keys(skillSrcMap).map((skill) => skill as keyof typeof skillSrcMap);
+
 export type Introduction = {
     about: string;
     buttons: {
