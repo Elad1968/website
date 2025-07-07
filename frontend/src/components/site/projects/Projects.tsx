@@ -36,7 +36,10 @@ export default function Projects() {
                                     dispatch(skill);
                                 }}
                             >
-                                <img src={skillSrcMap[skill]} className="w-8 aspect-square select-none"></img>
+                                <img
+                                    src={skillSrcMap[skill]}
+                                    className="w-8 aspect-square select-none inside-shadow-[0.125]"
+                                ></img>
                             </div>
                         );
                     })}
