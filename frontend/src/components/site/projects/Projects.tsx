@@ -19,7 +19,7 @@ export default function Projects() {
         <section id="projects" className="flex flex-col items-center gap-4 screen">
             <SectionHeader>Projects</SectionHeader>
             <span className="text-center">
-                Use the skill buttons belowe to filter the projects. Click on any of the projects to go to the
+                Use the skill buttons below to filter the projects. Click on any of the projects to go to the
                 repository.
             </span>
             <div className="flex flex-col justify-center items-center gap-8">
