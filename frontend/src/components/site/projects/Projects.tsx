@@ -54,11 +54,8 @@ export default function Projects() {
                         {Object.entries(projects)
                             .filter(([_, project]) => {
                                 if (state.length === 0) return true;
-                                if (enabled) {
-                                    return state.some((skill) => project.skills.includes(skill));
-                                } else {
-                                    return state.every((skill) => project.skills.includes(skill));
-                                }
+                                const filter = enabled ? Array.prototype.some : Array.prototype.every;
+                                return filter.call(state, (skill) => project.skills.includes(skill));
                             })
                             .map(([projectName, project]) => {
                                 return (
