@@ -46,7 +46,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                             setResponse({ message: "Failed to send the message.", error: true });
                         }
                     })}
-                    className="flex flex-col gap-4 max-w-128 w-full aspect-2/3 p-4 border rounded-sm border-black glass-0.5 -0.5 flex-1"
+                    className="flex flex-col gap-4 max-w-128 w-full aspect-2/3 p-4 border rounded-sm border-black glass-0.5 shadowed-0.5 flex-1"
                 >
                     <FormField
                         control={form.control}
