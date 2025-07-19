@@ -227,7 +227,7 @@
     }
     .screen {
         @apply w-screen p-4;
-        min-height: calc(100vh - var(--header-height));
+        min-height: calc(100dvh - var(--header-height));
         scroll-margin-top: var(--header-height);
     }
     .dim {
