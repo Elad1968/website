@@ -1,7 +1,7 @@
 import { projects, skillList, skillSrcMap } from "@/lib/data";
 import SectionHeader from "../common/SectionHeader";
 import Project from "./Project";
-import { useReducer, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import type { Projects, Skills } from "@/lib/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { Switch } from "@/components/ui/switch";
@@ -15,6 +15,10 @@ function reduceProjectList(state: Skill[], skill: Skill) {
 export default function Projects() {
     const [state, dispatch] = useReducer(reduceProjectList, []);
     const [enabled, setEnabled] = useState(false);
+    const [hydrated, setHydrated] = useState(false);
+    useEffect(() => {
+        setHydrated(true);
+    });
     return (
         <section id="projects" className="flex flex-col items-center gap-4 screen">
             <SectionHeader>Projects</SectionHeader>
@@ -62,7 +66,7 @@ export default function Projects() {
                                     <motion.div
                                         key={projectName}
                                         layout
-                                        initial={{ opacity: 0, y: 20 }}
+                                        initial={{ opacity: hydrated ? 0 : 1, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -20 }}
                                         transition={{ duration: 0.25 }}
