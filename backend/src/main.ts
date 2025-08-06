@@ -27,7 +27,7 @@ async function sendMail(request: Request, response: Response<Answer>, next: Next
         if (error instanceof ZodError) {
             response.status(StatusCodes.BAD_REQUEST).send({
                 error: true,
-                message: error.errors.map((error) => error.message).join(" "),
+                message: error.issues.map((error) => error.message).join(" "),
             });
         } else {
             response.status(StatusCodes.INTERNAL_SERVER_ERROR).send({ error: true, message: "Unknown error." });
