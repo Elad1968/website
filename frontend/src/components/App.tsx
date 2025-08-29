@@ -4,10 +4,19 @@ import "../index.css";
 import { ThemeProvider } from "./theme";
 
 export default function App() {
-    return (
-        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    const content = (
+        <>
             <Site />
             <BusinessCard />
-        </ThemeProvider>
+        </>
     );
+    if (typeof window !== "undefined") {
+        return (
+            <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+                {content}
+            </ThemeProvider>
+        );
+    } else {
+        return content;
+    }
 }
