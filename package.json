@@ -6,6 +6,6 @@
         "build": "pnpm --filter backend run build && pnpm --filter frontend run build"
     },
     "devDependencies": {
-        "concurrently": "^9.2.0"
+        "concurrently": "^9.2.1"
     }
 }
