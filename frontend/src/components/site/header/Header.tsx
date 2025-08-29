@@ -1,5 +1,6 @@
 import NavLink from "./NavLink";
 import { general } from "@/lib/data";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function Header() {
     return (
@@ -7,6 +8,7 @@ export default function Header() {
             <h1 className="m-0 text-4xl hover:text-green-500">
                 <a href="#">{general.name}</a>
             </h1>
+            <ThemeSwitcher />
             <nav className="flex flex-row justify-around gap-4 max-lg:hidden">
                 <NavLink href="#about">About</NavLink>
                 <NavLink href="#skills">Skills</NavLink>
