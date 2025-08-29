@@ -54,7 +54,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Name</FormLabel>
-                                <Input {...field} placeholder="Enter your name" className="bg-background" />
+                                <Input {...field} placeholder="Enter your name" className="bg-white" />
                                 <FormMessage />
                             </FormItem>
                         )}
@@ -65,7 +65,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Email</FormLabel>
-                                <Input {...field} placeholder="Enter your email" className="bg-background" />
+                                <Input {...field} placeholder="Enter your email" className="bg-white" />
                                 <FormMessage />
                             </FormItem>
                         )}
@@ -79,7 +79,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                                 <Textarea
                                     {...field}
                                     placeholder="Enter your message"
-                                    className="flex-grow resize-none bg-background"
+                                    className="flex-grow resize-none bg-white"
                                 />
                                 <div className="flex flex-row justify-between items-center gap-2 text-sm">
                                     <FormMessage />

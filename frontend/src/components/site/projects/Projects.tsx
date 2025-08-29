@@ -35,7 +35,9 @@ export default function Projects() {
                                 title={skill}
                                 data-selectable
                                 data-selected={state.includes(skill) ? true : undefined}
-                                className={"glass-0.25 p-2 rounded-lg border-black border cursor-pointer shadowed-0.25"}
+                                className={
+                                    "glass-0.25 p-2 rounded-lg border-foreground border cursor-pointer shadowed-0.25"
+                                }
                                 onClick={() => {
                                     dispatch(skill);
                                 }}

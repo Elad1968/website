@@ -36,13 +36,6 @@
     --radius-xl: calc(var(--radius) + 4px);
     --default-font-family: Rubik;
     --header-height: 4.5rem;
-    --rainbow-red: #ff6b6b;
-    --rainbow-orange: #f7b731;
-    --rainbow-yellow: #ffeb33;
-    --rainbow-green: #4caf50;
-    --rainbow-blue: #00bcd4;
-    --rainbow-indigo: #6a82fb;
-    --rainbow-purple: #9b59b6;
     --section-separator-angle: 2.5deg;
 }
 
@@ -142,6 +135,7 @@
     --chart-4: hsl(43 74% 66%);
     --chart-5: hsl(27 87% 67%);
     --radius: 0.6rem;
+    --main-bg: linear-gradient(hsl(100, 40%, 60%), hsl(190, 40%, 60%), hsl(280, 40%, 60%));
 }
 
 .dark {
@@ -169,6 +163,7 @@
     --chart-3: hsl(30 80% 55%);
     --chart-4: hsl(280 65% 60%);
     --chart-5: hsl(340 75% 55%);
+    --main-bg: linear-gradient(hsl(100, 70%, 20%), hsl(190, 70%, 20%), hsl(280, 70%, 20%));
 }
 
 @layer base {
@@ -183,27 +178,12 @@
     body {
         @apply bg-background text-foreground;
     }
+    main {
+        background-image: var(--main-bg);
+    }
 }
 
 @layer components {
-    #introduction {
-        background-image: linear-gradient(var(--rainbow-red), var(--rainbow-orange));
-    }
-    #about {
-        background-image: linear-gradient(var(--rainbow-orange), var(--rainbow-yellow));
-    }
-    #skills {
-        background-image: linear-gradient(var(--rainbow-yellow), var(--rainbow-green));
-    }
-    #projects {
-        background-image: linear-gradient(var(--rainbow-green), var(--rainbow-blue));
-    }
-    #contact {
-        background-image: linear-gradient(var(--rainbow-blue), var(--rainbow-indigo));
-    }
-    #future-section {
-        background-image: linear-gradient(var(--rainbow-indigo), var(--rainbow-purple));
-    }
     .business-card {
         @apply flex flex-col justify-center items-center w-screen h-screen text-center;
         background-image: linear-gradient(rgba(255, 228, 196, 0.5), rgba(255, 228, 196, 0.5)),
@@ -231,7 +211,7 @@
         scroll-margin-top: var(--header-height);
     }
     .dim {
-        @apply text-primary-foreground backdrop-blur-xl;
+        @apply backdrop-blur-xl text-white;
         background-color: rgba(32, 32, 32, 0.75);
     }
     .underlined {
@@ -282,7 +262,7 @@
 }
 
 @utility glass-* {
-    @apply backdrop-blur-lg;
+    @apply backdrop-blur-lg text-black;
     background-color: rgba(255, 255, 255, 0.5);
     &[data-selectable] {
         @apply duration-250;
