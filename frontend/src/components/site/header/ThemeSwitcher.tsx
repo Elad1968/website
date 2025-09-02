@@ -7,7 +7,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useTheme } from "@/components/theme";
+import { useTheme } from "@/lib/theme";
 
 type ThemeSwitcherProps = React.HTMLAttributes<HTMLButtonElement>;
 
@@ -22,7 +22,7 @@ export function ThemeSwitcher({ ...props }: ThemeSwitcherProps) {
                     <span className="sr-only">Toggle theme</span>
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent align="center">
                 <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>

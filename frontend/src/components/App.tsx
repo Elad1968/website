@@ -12,7 +12,7 @@ export default function App() {
     );
     if (typeof window !== "undefined") {
         return (
-            <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+            <ThemeProvider defaultTheme="system" storageKey="site-ui-theme">
                 {content}
             </ThemeProvider>
         );
