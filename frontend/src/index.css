@@ -135,7 +135,7 @@
     --chart-4: hsl(43 74% 66%);
     --chart-5: hsl(27 87% 67%);
     --radius: 0.6rem;
-    --main-bg: linear-gradient(hsl(100, 40%, 60%), hsl(190, 40%, 60%), hsl(280, 40%, 60%));
+    --main-bg: linear-gradient(135deg, hsl(100, 40%, 60%), hsl(190, 40%, 60%), hsl(280, 40%, 60%));
 }
 
 .dark {
@@ -163,7 +163,7 @@
     --chart-3: hsl(30 80% 55%);
     --chart-4: hsl(280 65% 60%);
     --chart-5: hsl(340 75% 55%);
-    --main-bg: linear-gradient(hsl(100, 70%, 20%), hsl(190, 70%, 20%), hsl(280, 70%, 20%));
+    --main-bg: linear-gradient(135deg, hsl(100, 70%, 20%), hsl(190, 70%, 20%), hsl(280, 70%, 20%));
 }
 
 @layer base {
@@ -180,6 +180,9 @@
     }
     main {
         background-image: var(--main-bg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
