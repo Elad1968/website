@@ -1,7 +1,7 @@
 import Site from "./site/Site";
 import BusinessCard from "./businness-card/BusinnessCard";
 import "../index.css";
-import { ThemeProvider } from "./theme";
+import { ThemeProvider } from "./Theme";
 
 export default function App() {
     const content = (
