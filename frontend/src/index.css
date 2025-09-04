@@ -265,7 +265,7 @@
 }
 
 @utility glass-* {
-    @apply backdrop-blur-lg text-black;
+    @apply text-black;
     background-color: rgba(255, 255, 255, 0.5);
     &[data-selectable] {
         @apply duration-250;
