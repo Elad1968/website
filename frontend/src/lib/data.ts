@@ -86,7 +86,7 @@ export type Card = {
 };
 
 export const introduction: Introduction = {
-    about: "A B.Sc. computer sceince student and a passionate software developer.",
+    about: "A B.Sc. in computer sceince graduate and a passionate software developer.",
     buttons: {
         GitHub: {
             icon: faGithub,
