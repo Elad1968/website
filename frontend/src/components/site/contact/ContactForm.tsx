@@ -95,7 +95,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                     {response.message && (
                         <span
                             id="form-response flex-grow"
-                            className={response.error ? "text-destructive" : "text-green-600"}
+                            className={response.error ? "text-destructive" : "text-[var(--success)]"}
                         >
                             {response.message}
                         </span>
