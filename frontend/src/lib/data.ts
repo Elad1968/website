@@ -23,6 +23,7 @@ export const skillSrcMap = {
     MongoDB: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     MSSQL: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
     MySQL: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+    "Next.js": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
     PostgreSQL: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     PowerShell: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg",
@@ -122,7 +123,7 @@ export const about: About = {
 
 export const skills: Skills = {
     "Programming Languages": ["C", "C++", "Python", "JavaScript", "TypeScript", "C#", "Java"],
-    "Web Technologies": ["HTML", "CSS", "Node.js", "React", "Tailwind", "Bootstrap", "Express", "Flask"],
+    "Web Technologies": ["HTML", "CSS", "Node.js", "React", "Next.js", "Tailwind", "Bootstrap", "Express", "Flask"],
     Databases: ["MySQL", "SQLite", "MSSQL", "PostgreSQL", "MongoDB"],
     "Build Systems": ["CMake", "Vite", "Gradle"],
     DevOps: ["Bash", "PowerShell", "Git", "Linux", "Windows"],
