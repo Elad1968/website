@@ -10,7 +10,7 @@ type ProjectProps = {
 export default function Project({ title, href, description, skills }: ProjectProps) {
     return (
         <a
-            className="glass-0.5 shadowed-0.5 w-128 flex flex-col items-center p-4 rounded-lg border border-foreground gap-4 max-w-[90vw]"
+            className="glass-0.5 shadowed-0.5 w-lg flex flex-col items-center p-4 rounded-lg border border-foreground gap-4 max-w-[90vw]"
             href={href}
             target="_blank"
             data-selectable
@@ -26,15 +26,11 @@ export default function Project({ title, href, description, skills }: ProjectPro
             </div>
             {skills && (
                 <>
-                    <hr className="border-black border-1 border-dashed w-full" />
+                    <hr className="border-black border border-dashed w-full" />
                     <div className="flex flex-row flex-wrap gap-4 justify-center">
                         {skills.map((skill, index) => {
                             return (
-                                <div
-                                    className="glass-0.5 rounded-lg p-1 border-black border-1"
-                                    key={index}
-                                    title={skill}
-                                >
+                                <div className="glass-0.5 rounded-lg p-1 border-black border" key={index} title={skill}>
                                     <img src={skillSrcMap[skill]} alt={skill} className="aspect-square h-8" />
                                 </div>
                             );

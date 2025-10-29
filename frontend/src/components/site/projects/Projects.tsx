@@ -27,7 +27,7 @@ export default function Projects() {
                 repository.
             </span>
             <div className="flex flex-col justify-center items-center gap-8">
-                <div className="flex flex-row flex-wrap gap-4 max-w-[48rem] justify-center">
+                <div className="flex flex-row flex-wrap gap-4 max-w-3xl justify-center">
                     {skillList.map((skill, index) => {
                         return (
                             <div

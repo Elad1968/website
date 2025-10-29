@@ -46,7 +46,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                             setResponse({ message: "Failed to send the message.", error: true });
                         }
                     })}
-                    className="flex flex-col gap-4 max-w-128 w-full aspect-2/3 p-4 border rounded-sm border-black glass-0.5 shadowed-0.5 flex-1"
+                    className="flex flex-col gap-4 max-w-lg w-full aspect-2/3 p-4 border rounded-sm border-black glass-0.5 shadowed-0.5 flex-1"
                 >
                     <FormField
                         control={form.control}
@@ -79,7 +79,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                                 <Textarea
                                     {...field}
                                     placeholder="Enter your message"
-                                    className="flex-grow resize-none bg-white"
+                                    className="grow resize-none bg-white"
                                 />
                                 <div className="flex flex-row justify-between items-center gap-2 text-sm">
                                     <FormMessage />
@@ -95,7 +95,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                     {response.message && (
                         <span
                             id="form-response flex-grow"
-                            className={response.error ? "text-destructive" : "text-[var(--success)]"}
+                            className={response.error ? "text-destructive" : "text-(--success)"}
                         >
                             {response.message}
                         </span>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col justify-evenly items-center p-4 min-h-[var(--header-height)] dim gap-4 max-[480px]:text-sm text-center">
+        <footer className="flex flex-col justify-evenly items-center p-4 min-h-(--header-height) dim gap-4 max-[480px]:text-sm text-center">
             <div className="flex flex-row flex-wrap gap-4 max-w-full justify-center">
                 {Object.values(footer.contact).map((contactInfo, index) => {
                     return (

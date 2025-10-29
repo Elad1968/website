@@ -8,7 +8,7 @@ export default function About() {
             <div className="flex flex-col items-center justify-evenly gap-4">
                 {about.text.map((text, index) => {
                     return (
-                        <p className="text-2xl max-w-192 w-full flex-grow" key={index}>
+                        <p className="text-2xl max-w-3xl w-full grow" key={index}>
                             {text}
                         </p>
                     );

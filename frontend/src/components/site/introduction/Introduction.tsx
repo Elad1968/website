@@ -7,7 +7,7 @@ export default function Introduction() {
     return (
         <section id="introduction" className="flex flex-col items-center justify-between screen p-4">
             <div className="flex grow items-center justify-evenly p-4 flex-1 w-full gap-4">
-                <div className="flex flex-col gap-4 max-lg:self-start flex-1 max-w-128 fade-to-view duration-500">
+                <div className="flex flex-col gap-4 max-lg:self-start flex-1 max-w-lg fade-to-view duration-500">
                     <span className="text-5xl">Hello!</span>
                     <div className="text-5xl">
                         <span>I'm </span>
