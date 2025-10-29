@@ -42,7 +42,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                             const response = await fetch(url, options);
                             const answer = answerSchema.parse(await response.json());
                             setResponse(answer);
-                        } catch (_: unknown) {
+                        } catch {
                             setResponse({ message: "Failed to send the message.", error: true });
                         }
                     })}

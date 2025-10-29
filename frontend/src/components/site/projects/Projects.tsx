@@ -18,7 +18,7 @@ export default function Projects() {
     const [hydrated, setHydrated] = useState(false);
     useEffect(() => {
         setHydrated(true);
-    });
+    }, []);
     return (
         <section id="projects" className="flex flex-col items-center gap-4 screen">
             <SectionHeader>Projects</SectionHeader>
@@ -58,7 +58,7 @@ export default function Projects() {
                 <div className="flex flex-wrap justify-center items-center gap-8 ">
                     <AnimatePresence>
                         {Object.entries(projects)
-                            .filter(([_, project]) => {
+                            .filter(([, project]) => {
                                 if (state.length === 0) return true;
                                 const filter = enabled ? Array.prototype.some : Array.prototype.every;
                                 return filter.call(state, (skill) => project.skills.includes(skill));
