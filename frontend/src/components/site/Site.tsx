@@ -18,13 +18,13 @@ export default function Site() {
             }}
         >
             <Header />
-            <main className="flex flex-col grow-1">
+            <main className="flex flex-col grow">
                 <Introduction />
                 {mainElements.map((element, index) => {
                     return (
                         <Fragment key={index}>
                             <hr
-                                className={`my-[calc((50vw)*tan(var(--section-separator-angle)))] flex-shrink-1 relative border-foreground border-y-2 border-dashed ${
+                                className={`my-[calc((50vw)*tan(var(--section-separator-angle)))] shrink relative border-foreground border-y-2 border-dashed ${
                                     degrees[index % 2]
                                 }`}
                             />
