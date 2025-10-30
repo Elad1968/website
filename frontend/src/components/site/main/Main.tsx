@@ -1,9 +1,9 @@
-import Introduction from "@/components/site/introduction/Introduction";
+import Introduction from "@/components/site/main/introduction/Introduction";
 import { Fragment } from "react/jsx-runtime";
-import About from "@/components/site/about/About";
-import Projects from "@/components/site/projects/Projects";
-import Skills from "@/components/site/skills/Skills";
-import Contact from "@/components/site/contact/Contact";
+import About from "@/components/site/main/about/About";
+import Projects from "@/components/site/main/projects/Projects";
+import Skills from "@/components/site/main/skills/Skills";
+import Contact from "@/components/site/main/contact/Contact";
 
 const mainElements = [<About />, <Skills />, <Projects />, <Contact />] as const;
 const degrees = ["rotate-[var(--section-separator-angle)]", "-rotate-[var(--section-separator-angle)]"] as const;
