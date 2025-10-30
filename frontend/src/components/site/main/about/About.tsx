@@ -1,5 +1,5 @@
 import { about } from "@/lib/data.ts";
-import SectionHeader from "../common/SectionHeader.tsx";
+import SectionHeader from "@/components/site/common/SectionHeader";
 
 export default function About() {
     return (

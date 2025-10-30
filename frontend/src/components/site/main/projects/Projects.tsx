@@ -1,5 +1,5 @@
 import { projects, skillList, skillSrcMap } from "@/lib/data";
-import SectionHeader from "../common/SectionHeader";
+import SectionHeader from "@/components/site/common/SectionHeader";
 import Project from "./Project";
 import { useEffect, useReducer, useState } from "react";
 import type { Projects, Skills } from "@/lib/data";

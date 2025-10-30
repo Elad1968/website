@@ -1,5 +1,5 @@
 import { skills } from "@/lib/data";
-import SectionHeader from "../common/SectionHeader";
+import SectionHeader from "@/components/site/common/SectionHeader";
 import Skillset from "./Skillset";
 
 export default function Skills() {

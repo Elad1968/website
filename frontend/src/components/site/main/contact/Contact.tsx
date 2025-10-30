@@ -1,5 +1,5 @@
 import { contact } from "@/lib/data";
-import SectionHeader from "../common/SectionHeader";
+import SectionHeader from "@/components/site/common/SectionHeader";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
