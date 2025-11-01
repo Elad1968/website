@@ -10,7 +10,7 @@ const degrees = ["rotate-[var(--section-separator-angle)]", "-rotate-[var(--sect
 
 export default function Main() {
     return (
-        <main className="snap-y snap-mandatory">
+        <main>
             <Introduction />
             {mainElements.map((element, index) => {
                 return (
